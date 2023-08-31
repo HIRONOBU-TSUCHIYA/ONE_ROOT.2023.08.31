@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>運転日報管理表</title>
+
+    <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/dashboard/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="index.html">管理日報</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">運転手A</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">運転手B</a>
+            </li>
+          </ul>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">運転手C</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">運転手D</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">運転手E</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">運転手F</a>
+            </li>
+          </ul>
+        </nav>
+
+        <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
+          <h1>Dashboard</h1>
+
+          <section class="row text-center placeholders">
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>労務時間</h4>
+              <div class="text-muted">Something else</div>
+            </div>
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>走行距離</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>給油量</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </section>
+
+          <h2>運転手日報</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>日付</th>
+                  <th>出勤時間</th>
+                  <th>退勤時間</th>
+                  <th>労務時間</th>
+                  <th>走行距離</th>
+                  <th>給油量</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>8/1</td>
+                  <td>8：00</td>
+                  <td>16：00</td>
+                  <td>8：00</td>
+                  <td>250ｋｍ</td>
+                  <td>300L</td>
+                </tr>
+                <tr>
+                  <td>8/2</td>
+                  <td>8：00</td>
+                  <td>15：00</td>
+                  <td>7：00</td>
+                  <td>250ｋｍ</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8/3</td>
+                  <td>8：00</td>
+                  <td>16：00</td>
+                  <td>8：00</td>
+                  <td>250ｋｍ</td>
+                  <td>300L</td>
+                </tr>
+                <tr>
+                  <td>8/4</td>
+                  <td>8：00</td>
+                  <td>16：00</td>
+                  <td>8：00</td>
+                  <td>150ｋｍ</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8/5</td>
+                  <td>8：00</td>
+                  <td>16：00</td>
+                  <td>8：00</td>
+                  <td>250ｋｍ</td>
+                  <td>300L</td>
+                </tr>
+                <tr>
+                  <td>8/6/td>
+                  <td>8：00</td>
+                  <td>15：00</td>
+                  <td>7：00</td>
+                  <td>250ｋｍ</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8/7</td>
+                  <td>8：00</td>
+                  <td>16：00</td>
+                  <td>8：00</td>
+                  <td>250ｋｍ</td>
+                  <td>300L</td>
+                </tr>
+                <tr>
+                  <td>8/8</td>
+                  <td>8：00</td>
+                  <td>16：00</td>
+                  <td>8：00</td>
+                  <td>150ｋｍ</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8/9</td>
+                  <td>8：00</td>
+                  <td>16：00</td>
+                  <td>8：00</td>
+                  <td>250ｋｍ</td>
+                  <td>300L</td>
+                </tr>
+                <tr>
+                  <td>8/10</td>
+                  <td>8：00</td>
+                  <td>15：00</td>
+                  <td>7：00</td>
+                  <td>250ｋｍ</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8/11</td>
+                  <td>8：00</td>
+                  <td>16：00</td>
+                  <td>8：00</td>
+                  <td>250ｋｍ</td>
+                  <td>300L</td>
+                </tr>
+                <tr>
+                  <td>8/12</td>
+                  <td>8：00</td>
+                  <td>16：00</td>
+                  <td>8：00</td>
+                  <td>150ｋｍ</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+       
+  <script>/** JS：Area */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script><style>/** CSS：Area */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
